@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Подписка на рассылку</title>
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <!-- Здесь пишем код-->
+    <header class="header header--manual">
+      <div class="header-top">
+        <div class="container"><a href="index.html" class="header-logo"><img src="img/logo-top.png" alt="alt"><span>Завод<br> анодирования</span></a>
+          <div class="header-contacts">
+            <div class="header-phones"><a href="#header-phone-popup" title="&lt;div class='phone-tip'&gt;Стационарный телефон Московского офиса отдела продаж&lt;/div&gt;" class="tooltip__header-phone">8 (495) 191 10 82</a>
+            </div><a href="mailto:info@pochta.ru" class="header-mail">info@pochta.ru</a>
+          </div>
+        </div>
+      </div>
+      <div class="container"><a href="index.html" class="link-back">Вернуться на главную</a></div>
+      <div class="header-bottom header-bottom--manual">
+        <div class="container">
+          <div class="title-wrapper title-wrapper--subscribe">
+            <h1>Спасибо за заявку!</h1>
+            <p>Наш мереджер свяжется с Вами в ближайшее время.</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="subscribe-block">
+      <div class="container">
+        <div class="subscribe-block__inner">
+          <div class="subscribe-block__top">
+            <h2 class="title-mini">Узнайте, как избежать 7 распростаненных ошибок при покупке анодированных изделий из алюминия, латуни и нержавеющей стали</h2>
+            <p>Исходя из 15-ти летнего опыта работы с нашимы клиентами мы разработали подробный чек-лист во избежании «подводных камней», с которыми сталкиваются 95% наших клиентов:</p>
+            <ul>
+              <li>«Как избежать выцветания металлического плинтуса и сохранить естественный цвет изделия»</li>
+              <li>«Как правильно производить монтаж чтобы плинтус не отходил со временем от стены»</li>
+              <li> и еще более 70 полезных советов из нашей практики.</li>
+            </ul>
+            <p>Делаем рассылку полезной информации 1 раз в неделю</p>
+          </div>
+          <form class="subscribe-block__form">
+            <label class="inp-user">
+              <input type="text" name="name" placeholder="Введите Ваше имя" required>
+            </label>
+            <label class="inp-mail">
+              <input type="text" name="tel" placeholder="Введите Вашу почту" required>
+            </label>
+            <button type="submit" class="button">
+              <div class="button__inner">Подписаться
+                <div class="button__effect"></div>
+              </div>
+            </button>
+            <div class="form-bottom">
+              <label>
+                <input type="checkbox" name="personal-data" checked><span class="checkbox-custom"></span><span>Я даю согласие на обработку <a href="#">персональных данных</a></span>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div>2007-2018 «МЛВ Проф»</div><a href="policy.html">Политика конфиденциальности</a>
+        <div><span>ОГРН 1187746439759</span><span>ИНН 7743253950</span><span>КПП 774301001</span></div>
+      </div>
+    </footer>
+    <div id="header-phone-popup" class="popup popup-header-phone mfp-hide">
+      <div class="popup-left">
+        <div class="popup-manager">
+          <div class="popup-manager__portrait"><img src="img/popup-manager.jpg" alt="alt"></div>
+          <div class="popup-manager__info">
+            <div class="popup-manager__name">Дмитрий Мельник</div>
+            <p>Опыт работы в строительной тематике 7 лет.<span>Имеет высшее строительное образование.</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="popup-right">
+        <div class="popup-title">Закажите звонок эксперта  MLV-Prof</div>
+        <p>Менеджер свяжется с Вами в ближайшее время, или в удобные для Вас сроки.</p>
+        <form action="#" class="popup-header-phone__form to-subscribe-form">
+          <div class="popup-list"><span>Время звонка:</span>
+            <select class="calls-list">
+              <option value="">В ближайшее время</option>
+              <option value="">С 9:00 до 11:00</option>
+              <option value="">С 11:00 до 13:00</option>
+              <option value="">С 13:00 до 17:00</option>
+              <option value="">С 17:00 до 20:00</option>
+              <option value="">завтра</option>
+            </select>
+          </div>
+          <label class="inp-user">
+            <input type="text" name="name" placeholder="Введите ваше имя">
+          </label>
+          <label class="inp-phone">
+            <input type="number" name="phone" placeholder="Введите ваш телефон" required>
+          </label>
+          <button type="submit" class="button">
+            <div class="button__inner">Перезвонить мне</div>
+          </button>
+          <div class="form-bottom">
+            <label>
+              <input type="checkbox" name="personal-data" checked required><span class="checkbox-custom"></span><span>Я даю согласие на обработку <a href="policy.html">персональных данных</a></span>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="header-button-popup" class="popup header-button-popup mfp-hide">
+      <p>Оставьте заявку на расчет персонального<span>коммерческого предложения</span></p>
+      <div class="popup-title">Заполните данные:</div>
+      <form action="#" class="header-button-popup__form to-subscribe-form to-validate-form">
+        <label class="inp-user">
+          <input type="text" name="name" placeholder="Введите ваше имя">
+        </label>
+        <label class="inp-phone">
+          <input type="number" name="phone" placeholder="Введите ваш телефон" required>
+        </label>
+        <button type="submit" class="button">
+          <div class="button__inner">Получить коммерческое предложение</div>
+        </button>
+        <div class="form-bottom">
+          <label>
+            <input type="checkbox" name="personal-data" checked required><span class="checkbox-custom"></span><span>Я даю согласие на обработку <a href="policy.html">персональных данных</a></span>
+          </label>
+        </div>
+      </form>
+    </div>
+    <script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>
