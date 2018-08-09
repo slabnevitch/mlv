@@ -1424,10 +1424,7 @@ body {
   font-weight: normal;
   min-width: 320px;
   position: relative;
-  -webkit-font-smoothing: antialiased;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+  -webkit-text-stroke: 0.5px;
   overflow-x: hidden; }
 
 input {
