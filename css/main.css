@@ -1485,9 +1485,10 @@ h1, h2 {
   font-family: "BebasRegular", sans-serif;
   text-transform: uppercase;
   font-size: 53px;
-  line-height: 56px;
-  font-weight: 700;
-  letter-spacing: -1px; }
+  line-height: 56px; }
+  h1.l-spacing, h2.l-spacing {
+    font-weight: 700;
+    letter-spacing: -1px; }
   h1.white, h2.white {
     color: #fff; }
   h1.manual-title, h2.manual-title {
