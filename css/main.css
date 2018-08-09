@@ -1490,7 +1490,7 @@ h1, h2 {
   text-transform: uppercase;
   font-size: 53px;
   line-height: 56px;
-  -webkit-font-feature-settings: "kern" 1; }
+  text-rendering: optimizeLegibility; }
   h1.white, h2.white {
     color: #fff; }
   h1.manual-title, h2.manual-title {
