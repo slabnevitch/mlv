@@ -3350,6 +3350,8 @@ div.scrollingHotSpotLeftVisible {
     margin-bottom: 17px;
     line-height: 18px;
     text-align: left;
+    pointer-events: none !important;
+    cursor: default !important;
     text-decoration: none !important;
     -webkit-text-fill-color: white;
     -webkit-opacity: 1;
