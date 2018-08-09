@@ -65,7 +65,6 @@ $(function() {
 				};
 
 				if ( isMobile.any() ) {
-					alert('is mobile');
 					 touchHover();
 	  		}
 		// assortment hover detect
@@ -299,7 +298,7 @@ $(function() {
 
 		function mouseOfScreen(){
 			console.log('offscreen');
-			if(glioFlag == true){
+			if(glioFlag == true && $('.no-mouseout-popup').length == 0){
 
 				$.magnificPopup.open({
 					items: {
@@ -309,24 +308,9 @@ $(function() {
 					callbacks: {
 						open: function() {
 
-							 // console.log('mag-content ' + this.st.el.attr('class')); //кнопка
-							 // console.log(this.content.find('form').attr('class'));//форма
-							 // var $hiddenInput = $('<input>', {
-							 // 		type: 'hidden',
-							 // 		// value: $('.header-bottom--assortment').length > 0 ? 'Заявка на каталог, Exit Pop-up. Ассортимент: плоский.' : 'Заявка на каталог, Exit Pop-up. Главная',
-							 // 		class: 'form-submit-name',
-							 // 		name: 'form-name'
-							 // });
-
-							 // console.log($hiddenInput);
-
-							 // this.content.find('form').prepend($hiddenInput);
-
 						  },
 
 						  close: function() {
-						    // this.content.find('.form-submit-name').remove();
-
 						  }
 						
 					}
