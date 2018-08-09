@@ -46,7 +46,7 @@ $(function() {
 	      is_safari=false;
 	    }
 
-	    if (is_safari || is_windows){
+	    if (is_safari){
 	      $('h1, h2').addClass('l-spacing');
 	    }
 
