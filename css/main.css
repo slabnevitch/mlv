@@ -5298,11 +5298,8 @@ footer {
     padding: 60px 0; }
   .clients-nav {
     bottom: 50px; }
-  footer .container {
-    display: block;
-    text-align: center; }
-    footer .container a {
-      margin: 30px 0; }
+  footer .container a {
+    margin: 30px 0; }
   .assortment-pointer {
     display: none; }
   .header-bottom--assortment .title-wrapper--assortment h1 {
