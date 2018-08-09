@@ -1417,7 +1417,7 @@ html {
   font-size: 14px; }
 
 html, body {
-  text-rendering: optimizeLegibility; }
+  text-rendering: geometricPrecision; }
 
 body {
   font-family: "RobotoLight", sans-serif;
