@@ -47,6 +47,7 @@ $(function() {
 	    }
 
 	    if (is_safari){
+	    	alert('is safari');
 	      $('h1, h2').addClass('l-spacing');
 	    }
 
