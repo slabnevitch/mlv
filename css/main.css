@@ -3350,6 +3350,7 @@ div.scrollingHotSpotLeftVisible {
     margin-bottom: 17px;
     line-height: 18px;
     text-align: left;
+    text-decoration: none !important;
     -webkit-text-fill-color: white;
     -webkit-opacity: 1;
     color: white; }
@@ -4785,6 +4786,9 @@ button.mfp-close {
     margin-bottom: 50px;
     text-align: left;
     letter-spacing: -.1px; }
+    .title-wrapper--assortment h1.l-spacing {
+      font-weight: 700;
+      letter-spacing: -1.5px; }
   .title-wrapper--assortment .button {
     margin-bottom: 30px; }
     .title-wrapper--assortment .button:before {
