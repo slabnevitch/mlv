@@ -1416,15 +1416,11 @@ img.mfp-img {
 html {
   font-size: 14px; }
 
-html, body {
-  text-rendering: geometricPrecision; }
-
 body {
   font-family: "RobotoLight", sans-serif;
   font-weight: normal;
   min-width: 320px;
   position: relative;
-  -webkit-text-stroke: 0.5px;
   overflow-x: hidden; }
 
 input {
@@ -1489,7 +1485,8 @@ h1, h2 {
   font-family: "BebasRegular", sans-serif;
   text-transform: uppercase;
   font-size: 53px;
-  line-height: 56px; }
+  line-height: 56px;
+  font-weight: 400; }
   h1.white, h2.white {
     color: #fff; }
   h1.manual-title, h2.manual-title {
