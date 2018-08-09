@@ -5297,6 +5297,8 @@ footer {
     bottom: 50px; }
   footer .container a {
     margin: 30px 0; }
+  footer .container div {
+    width: 100%; }
   .assortment-pointer {
     display: none; }
   .header-bottom--assortment .title-wrapper--assortment h1 {
