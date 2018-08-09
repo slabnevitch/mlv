@@ -469,8 +469,12 @@ $(function() {
 	// end of form valid
 
 		// divScroll
-			$(".produce__slider-thumbs").smoothDivScroll({
+			var $divScroller = $(".produce__slider-thumbs").smoothDivScroll({
 				autoScrollingMode: "onStart"
+			});
+
+			$(window).resize(function() {
+				$divScroller.smoothDivScroll("recalculateScrollableArea"); 
 			});
 		// end divScroll
 
