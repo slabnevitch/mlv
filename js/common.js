@@ -9,7 +9,7 @@ $(function() {
 				e.preventDefault();
 				if($('.statistic').length > 0){
 					var statisticHeight = $('.statistic').height();
-					console.log('height ' + statisticHeight);
+					
 				}
 				var location = $(this).attr('href'), //секция с id, равным href текущей ссылки
 					sectionCoord = $(location).offset().top - statisticHeight;
@@ -96,7 +96,7 @@ $(function() {
 			});
 
 			$('.produce__slider-thumbs img').click(function() {
-				console.log($(this).attr('data-slide'));
+				
 				$slickProduce.slick('slickGoTo', $(this).attr('data-slide') - 1);
 			});
 
@@ -130,14 +130,23 @@ $(function() {
 				delay: 0,
 				contentAsHTML: true,
 				functionReady: function(instance, helper) {
-					// console.log(helper.tooltip);
+					
 					helper.tooltip.classList.add('header-phone-tip');
 				}
 			});
 
 			$('.tooltip__h1-tip').tooltipster({
 				side: ['right', 'bottom'],
-				// trigger: 'click',
+				trigger: 'custom',
+				 triggerOpen: {
+				 	mouseenter: true,
+				 	tap: true
+				 },
+				 triggerClose: {
+				 	click: true,
+				 	scroll: true,
+				 	tap: true
+				 },
 				maxWidth: 275,
 				delay: 150,
 				contentAsHTML: true,
@@ -231,8 +240,6 @@ $(function() {
 			$('.calls-list').ikSelect({
 				autoWidth: false,
 				onShow: function (inst) {
-					// console.log(inst.el);
-					console.log($(inst.el).width());
 					var currWidth = $('.ik_select').width();
 					$('.ik_select_dropdown').width(currWidth);
 				}
@@ -260,16 +267,13 @@ $(function() {
 
 					 open: function() {
 					    toggleGlioFlag('disable');
-						 // console.log('mag-content ' + this.st.el.attr('class')); //кнопка
-						 // console.log(this.content.find('form').attr('class'));//форма
+						 
 						 var $hiddenInput = $('<input>', {
 						 		type: 'hidden',
 						 		value: this.st.el.attr('data-hidden-name'),
 						 		class: 'form-submit-name',
 						 		name: 'form-name'
 						 });
-
-						 console.log($hiddenInput);
 
 						 this.content.find('form').prepend($hiddenInput);
 
@@ -278,9 +282,6 @@ $(function() {
 					  close: function() {
 					    toggleGlioFlag('anable');
 					    this.content.find('.form-submit-name').remove();
-					    // glioInit();
-					    // console.log(glio.statusTop);
-					    // glio.start();
 					  }
 				}
 			});
@@ -297,12 +298,12 @@ $(function() {
 			}else{
 				glioFlag = true;
 			}
-			console.log('flag ' + glioFlag);
+			
 		}
 		
 
 		function glioInit(){
-			console.log('glioInit!!!');
+
 			glio.init(
 				[ 'top', mouseOfScreen],
 				[ 'top-left', mouseOfScreen],
@@ -314,7 +315,7 @@ $(function() {
 		glioInit();
 
 		function mouseOfScreen(){
-			console.log('offscreen');
+			
 			if(glioFlag == true && $('.no-mouseout-popup').length == 0){
 
 				$.magnificPopup.open({
@@ -370,7 +371,6 @@ $(function() {
 		    
 		  };
 		  this.formSubmit = function(e){
-		   console.log('skotnik');
 		    
 		    if(valid.formValidate($(this)) == false){
 		     return false;
@@ -471,9 +471,7 @@ $(function() {
 		// valid.init();
 
 		$('.to-subscribe-form, .to-validate-form').submit(function() {
-			// $(this).submit();
-			// console.log('to-subscribe submited');
-			var $th = $(this);
+				var $th = $(this);
 			setTimeout(function() {
 		        document.location.href = 'subscribe.html';
 		    }, 100);
@@ -499,7 +497,7 @@ $(function() {
 			var $fadeTitles = $('.produce-slogans li');
 			setInterval(function() {
 				 $fadeTitles.eq(getRandomInt(0, 4)).fadeIn().siblings().fadeOut();
-					// console.log($fadeTitles.eq(getRandomInt(1, 6)));
+					
 				}, 4000);
 
 		// end slider random titles
@@ -531,7 +529,6 @@ $(function() {
 				comma_separator_number_step = $.animateNumber.numberStepFactories.separator(' ');
 
 			this.init = function() {
-				console.log('statIbit');
 				this.valsMounthInterval();
 				this.valsWarehouseInterval();
 			},
@@ -614,8 +611,6 @@ $(function() {
 				__self = this;
 
 			this.init = function() {
-				console.log('favPopu.init');
-				console.log($favPopParent.eq(0));
 				this.startTimer();
 				this.returnTimer();
 				// this.closeTimer();
@@ -633,7 +628,7 @@ $(function() {
 			},
 
 			this.popupClick = function(e) {
-				console.log(e.target.className);
+				
 				if(e.target.className == "statistic-button__close"){
 					$favPop.fadeOut();
 					
@@ -652,13 +647,13 @@ $(function() {
 
 			this.hoverIn = function() {
 				$favPop.fadeIn();
-				console.log('hoverIn');
+				
 				clearTimeout(closer);
 				clearInterval(closer);
 			}
 
 			this.hoverOut = function() {
-				console.log('hoverOut');
+				
 				$favPop.fadeOut();	
 				// __self.returnTimer();
 				clearInterval(returner);
@@ -707,7 +702,7 @@ $(function() {
 	// end favorites popup
 
 	// to favorites
-	console.log('favn ' + $('#fav').length);
+	
 	if($('#fav').length > 0 && screen.width > 1200){
 
 		fav.addEventListener('click', function(e) {
@@ -789,7 +784,7 @@ $(function() {
 
 					this.init = function() {
 						this.regList();
-						// console.log('init');
+						
 					}
 
 					this.regList = function() {
@@ -823,7 +818,7 @@ $(function() {
 						}
 
 					this.counterPlus = function() {
-						console.log("counterPlus");
+						
 						count++;
 						if(count > 4) count = 4;
 					}
@@ -835,7 +830,7 @@ $(function() {
 					}
 
 					this.kvizRender = function(currentBlock) {
-						console.log("count " + count);
+						
 						$('.kvis-item').eq(count - 1).removeClass('hidden').siblings('.kvis-item').addClass('hidden');
 					}
 
@@ -857,9 +852,7 @@ $(function() {
 					}
 
 					this.formRender = function(text, name) {
-						// if($kvizForm.has('input[name='+ name +']')){
-						// 	console.log("has!!!");
-						// }
+
 						var $newInput = $('<input>',{
 							type: 'hidden',
 							name: name,
@@ -878,9 +871,9 @@ $(function() {
 
 					this.kvizSubmit = function(e) {
 						var th = $(this);
-							console.log(th.serialize());
+							
 							$('.kvis-item__form').submit();
-							console.log($('.kvis-item__form').serialize());
+							
 						$.ajax({
 							type: "POST",
 							url: "mail.php", //Change
